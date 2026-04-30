@@ -1,0 +1,158 @@
+% ================================
+% Mehmet Yigit Turali — One-Page, Two-Column Research Resume
+% Apple AI/ML Research–oriented • balanced columns • single page
+% ================================
+\documentclass[letterpaper,10pt]{article}
+
+% --- Core look & spacing ---
+\usepackage[margin=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
+\usepackage{microtype}
+\usepackage{url}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{array}
+\usepackage{ifthen}
+\usepackage{tabularx}                 % <-- added for inline headers
+\usepackage[sfdefault]{sourcesanspro} % clean, readable sans serif
+
+\urlstyle{same}
+\microtypecontext{spacing=nonfrench}
+\setstretch{0.98}                 % subtle vertical compression
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt, parsep=0pt}
+\setlist[enumerate]{leftmargin=*, itemsep=2pt, topsep=2pt, parsep=0pt}
+
+% --- Section style ---
+\titleformat{\section}
+  {\large\bfseries\scshape}
+  {}{0pt}{}[\vspace{-2pt}\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{3pt}
+
+% --- Small helpers ---
+\newcommand{\dotsep}{\hspace{0.35em}\textbar\hspace{0.35em}} % robust separator
+\newcommand{\role}[1]{\emph{#1}}
+\newcommand{\daterange}[1]{\textbf{\small #1}}
+
+% --- Inline header: Name — Location  |  Dates (right aligned)
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}p{0.28\linewidth}} % tweak width as needed
+\newcommand{\entryinline}[3]{%
+  \begin{tabularx}{\linewidth}{@{}L R@{}}%
+    \textbf{#1} \textit{— #2} & \small #3\\
+  \end{tabularx}%
+}
+
+% --- Header ---
+\begin{document}
+\begin{center}
+  {\Large \scshape Mehmet Yigit Turali}\\[-1pt]
+  Department of Electrical \& Computer Engineering, UCLA\\[-1pt]
+  \href{mailto:myigitturali@ucla.edu}{\faEnvelope\ myigitturali@ucla.edu}
+  \dotsep \href{https://yigitturali.com}{\faGlobeAmericas\ yigitturali.com}
+  \dotsep \href{https://github.com/YigitTurali}{\faGithub\ github.com/YigitTurali}
+\end{center}
+\vspace{-2pt}
+
+% ================================
+% Two columns using minipages (predictable & balanced)
+% Widened gutter for breathing room
+% ================================
+\begin{minipage}[t]{0.60\textwidth}
+
+\section{Education}
+\entryinline{University of California, Los Angeles (UCLA)}{Los Angeles, CA}{Sep 2024 — Present}
+Ph.D. in Electrical \& Computer Engineering, GPA: 3.94/4.00 \\
+Advisor: Dr. Vwani P. Roychowdhury
+
+\medskip
+\entryinline{Bilkent University}{Ankara, Turkey}{Sep 2019 — Jun 2024}
+B.S. in Electrical \& Electronics Engineering, GPA: 3.83/4.00 \\
+\emph{Summa Cum Laude}
+
+\section{Research \& Professional Experience}
+
+\entryinline{Generative Semantic Workspace (GSW) — UCLA}{Los Angeles, CA}{Jun 2024 — Present}
+\role{Graduate Student Researcher}
+\begin{itemize}
+  \item Research large language model reasoning and retrieval under Prof. Vwani P. Roychowdhury.
+\item Develop a reranker-scored, beam-style multi-hop retrieval pipeline that expands and selects top-$k$ contexts for consistent reasoning.
+  \item Construct structured semantic graphs and custom vector-database interfaces (FAISS, Pinecone) for dynamic memory updates and context tracking across reasoning steps.
+\end{itemize}
+
+\entryinline{LLM-Based Genomic Variant Detection — UCLA}{Los Angeles, CA}{Sep 2024 — Present}
+\role{Graduate Student Researcher}
+\begin{itemize}
+  \item Develop transformer one-shot models that treat DNA as language for reference-free variant detection.
+  \item Introduce contrastive DNA embeddings for semantically meaningful genomic representations.
+\end{itemize}
+
+\entryinline{Brain Organoid Computing — UCLA}{Los Angeles, CA}{Sep 2024 — Present}
+\role{Graduate Student Researcher}
+\begin{itemize}
+  \item Explore organoid-based reservoir computing for forecasting chaotic time series.
+  \item Implement electrode-array interfacing \& stimulation pipelines to optimize nonlinear prediction.
+\end{itemize}
+
+\entryinline{Prior Research (Bilkent University)}{Ankara, TR}{2021 — 2024}
+\role{Undergraduate Researcher}
+\begin{itemize}
+  \item Developed gradient boosting with moving-average terms for sequential regression (\emph{IEEE SPL 2023}).
+  \item Designed adaptive feature selection via binary masking (\emph{Neural Computing \& Applications 2025}).
+\end{itemize}
+
+\entryinline{DataBoss Security \& Analytics}{Ankara, TR}{2022 — 2024}
+\role{Machine Learning Researcher}
+\begin{itemize}
+  \item Built AI agents and RAG chatbots with LangChain; designed self-multi RAG and retrieval-rank pipelines.
+  \item Created GBM variants with moving-average terms for renewable energy and finance forecasting.
+\end{itemize}
+
+\entryinline{National Magnetic Resonance Research Center (UMRAM)}{Bilkent Univ.}{2021 — 2022}
+\role{Computer Vision Researcher}
+\begin{itemize}
+  \item CNNs for sacroiliitis detection (JointNET) from X-ray images.
+  \item Multi-branch transformer (HydraViT) for thoracic disease multi-label classification.
+\end{itemize}
+
+\end{minipage}
+\hspace{0.06\textwidth} % wider gutter between columns
+\begin{minipage}[t]{0.34\textwidth}
+
+\section{Publications}
+\small
+\begin{itemize}[leftmargin=0in, itemsep=1pt]
+  \item Z. Fei$^{*}$, \textbf{M. Y. Turali}$^{*}$, et al., \href{https://neurips.cc/}{\emph{Customizing Open-Source LLMs for Quantitative Medication Attribute Extraction across Heterogeneous EHR Systems}}, NeurIPS 2025 Workshop on GenAI for Health. {\footnotesize $^{*}$Equal contribution.}
+  \item \textbf{M. Y. Turali}, M.E. Lorasdagi, S.S. Kozat, \href{https://doi.org/10.1007/s00521-024-10913-9}{\emph{Binary Feature Mask Optimization for Feature Selection}}, Neural Computing \& Applications, 2025.
+  \item \textbf{M. Y. Turali}, A.T. Koc, S.S. Kozat, \href{https://doi.org/10.1016/j.dsp.2024.104731}{\emph{Optimal Stochastic Gradient Descent Algorithm for Filtering}}, Digital Signal Processing, 2024.
+  \item \textbf{M. Y. Turali}, M.E. Lorasdagi, S.S. Kozat, \href{https://doi.org/10.1007/s11760-024-03411-x}{\emph{AFS-BM: Enhancing Model Performance through Adaptive Feature Selection with Binary Masking}}, Signal, Image and Video Processing (SIViP), 2024.
+  \item E. Ilhan, \textbf{M. Y. Turali}, S.S. Kozat, \href{https://doi.org/10.1109/LSP.2023.3309577}{\emph{Gradient Boosting With Moving-Average Terms for Nonlinear Sequential Regression}}, IEEE Signal Processing Letters, 2023.
+  \item Ş. Öztürk, \textbf{M. Y. Turalı}, T. Çukur, \href{https://doi.org/10.1016/j.bspc.2024.106959}{\emph{HydraViT: Adaptive Multi-Branch Transformer for Multi-Label Disease Classification from Chest X-ray Images}}, Biomedical Signal Processing and Control, 2025.
+  \item S. Turk, A. Demirkaya, \textbf{M. Y. Turali}, \href{https://doi.org/10.48550/arXiv.2301.10769}{\emph{JointNET: A Deep Model for Predicting Active Sacroiliitis from Sacroiliac Joint Radiography}}, arXiv:2301.10769, 2023.
+\end{itemize}
+\normalsize
+
+\section{Honors \& Awards}
+\begin{itemize}
+  \item \textbf{Bilkent University Research Excellence Award} (2024)
+  \item \textbf{Responsible AI Innovation Award} — MathWorks \& FIGES (2024)
+  \item \textbf{Shell Cashflow Forecasting Datathon} — 4th Place (2023)
+  \item \textbf{Bilkent University Comprehensive Scholarship} (2019–2024)
+\end{itemize}
+
+\section{Technical Skills}
+\begin{itemize}
+  \item \textbf{Programming:} Python, MATLAB, Verilog HDL
+  \item \textbf{Frameworks:} PyTorch, TensorFlow, Keras, Transformers, Hugging Face
+  \item \textbf{Vector Databases:} FAISS, Pinecone, LangChain
+  \item \textbf{ML Tools:} scikit-learn, Pandas, NumPy, Matplotlib
+  \item \textbf{Neuro/Signal:} Elephant, Kilosort, SpikeInterface
+  \item \textbf{Dev Tools:} Docker, Git, \LaTeX
+\end{itemize}
+
+\end{minipage}
+\end{document}
