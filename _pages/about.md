@@ -6,7 +6,7 @@ subtitle: <a href="https://www.ee.ucla.edu/">UCLA Electrical and Computer Engine
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.png
   image_circular: false
   more_info: >
     <p>Engineering IV Building</p>
@@ -29,7 +29,7 @@ latest_posts:
 
 I'm a M.S./Ph.D. student at the [Department of Electrical and Computer Engineering](https://www.ee.ucla.edu/), University of California, Los Angeles, advised by [Prof. Vwani P. Roychowdhury](https://www.vwaniroychowdhury.com). My research sits at the intersection of **large language models, structured memory, and machine learning for healthcare**.
 
-Currently, I'm building **non-parametric continual-learning systems** that encode documents into entity- and event-aware structured memories — *Generative Semantic Workspaces (GSW)* — and reason over them via inference-chain retrieval. This work led to **PANINI** (ICML 2026, equal first author), which delivers competitive multi-hop QA accuracy with 2–30× fewer answer-context tokens than baselines.
+Currently, I'm building **non-parametric continual-learning systems** that encode documents into entity- and event-aware structured memories — *Generative Semantic Workspaces (GSW)* — and reason over them via inference-chain retrieval. This work led to **PANINI** (ICML 2026), which delivers competitive multi-hop QA accuracy with 2–30× fewer answer-context tokens than baselines.
 
 I also work on:
 - **NLP for genomics**: reference-free DNA embeddings and one-shot structural-variant detection treating DNA as a specialized language.
