@@ -36,6 +36,6 @@ I also work on:
 - **Brain-organoid computing**: reservoir-computing approaches that harness biological neural networks for chaotic time-series forecasting.
 - **GlobalHealthLLM**: LLM-driven standardization of pediatric epilepsy records from rural Ugandan clinics, supporting medication-decision tools.
 
-Before UCLA, I earned my B.S. in Electrical and Electronics Engineering at [Bilkent University](https://ee.bilkent.edu.tr/) (Summa Cum Laude, 2024), where I was a researcher under Prof. S. Serdar Kozat publishing on adaptive feature selection, gradient-boosted sequential regression, and SGD-based filtering. I'm a recipient of the Bilkent Research Excellence Award (2024) and the Responsible AI Innovation Award (MathWorks / FIGES / Tubitak Sage, 2024).
+Before UCLA, I earned my B.S. in Electrical and Electronics Engineering at [Bilkent University](https://ee.bilkent.edu.tr/) (Summa Cum Laude, 2024), where I was a researcher under [Prof. S. Serdar Kozat](https://kilyos.ee.bilkent.edu.tr/~kozat/) publishing on adaptive feature selection, gradient-boosted sequential regression, and SGD-based filtering. I'm a recipient of the Bilkent Research Excellence Award (2024) and the Responsible AI Innovation Award (MathWorks / FIGES / Tubitak Sage, 2024).
 
 Feel free to reach out if you'd like to chat about LLM memory systems, ML for health, or computational neuroscience.

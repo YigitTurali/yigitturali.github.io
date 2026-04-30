@@ -8,7 +8,7 @@ category: industry
 related_publications: true
 ---
 
-Research at **DataBoss Inc.** under Prof. S. Serdar Kozat on time-series analysis and forecasting, applied to the renewable-energy and finance sectors.
+Research at **DataBoss Inc.** under [Prof. S. Serdar Kozat](https://kilyos.ee.bilkent.edu.tr/~kozat/) on time-series analysis and forecasting, applied to the renewable-energy and finance sectors.
 
 ## Contributions
 

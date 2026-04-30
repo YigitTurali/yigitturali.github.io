@@ -7,7 +7,7 @@ importance: 5
 category: industry
 ---
 
-Worked at **DataBoss Inc.** under Prof. S. Serdar Kozat on AI-powered chatbots and agent assistants for industrial applications, using Langchain.
+Worked at **DataBoss Inc.** under [Prof. S. Serdar Kozat](https://kilyos.ee.bilkent.edu.tr/~kozat/) on AI-powered chatbots and agent assistants for industrial applications, using Langchain.
 
 ## Highlights
 

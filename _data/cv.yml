@@ -16,6 +16,8 @@ cv:
       username: a_f1NkQAAAAJ
     - network: X
       username: yigitturali
+    - network: LinkedIn
+      username: myigitturali
 
   address:
     street: Engineering IV Building
@@ -47,7 +49,7 @@ cv:
         end_date: 2024-06
         score: "GPA 3.83/4.00, Summa Cum Laude"
         highlights:
-          - "Advisor: Prof. S. Serdar Kozat."
+          - "Advisor: [Prof. S. Serdar Kozat](https://kilyos.ee.bilkent.edu.tr/~kozat/)."
           - "Research: feature selection, gradient boosting, sequential regression, computer vision for medical imaging."
 
     Experience:
@@ -70,7 +72,7 @@ cv:
         end_date: 2024-06
         summary: >
           Built AI-powered chatbots and agent assistants on Langchain. Developed RAG variants and agent
-          architectures, including a self-multi-RAG built on top of self-RAG. Supervised by Prof. S. Serdar Kozat.
+          architectures, including a self-multi-RAG built on top of self-RAG. Supervised by [Prof. S. Serdar Kozat](https://kilyos.ee.bilkent.edu.tr/~kozat/).
 
       - company: DataBoss Inc.
         position: Machine Learning Researcher
@@ -80,7 +82,7 @@ cv:
         summary: >
           Time-series analysis and forecasting with statistical and ML algorithms for renewable-energy and
           finance sectors. Developed a gradient-boosting variant integrating error terms as features for
-          renewable-energy forecasting. Supervised by Prof. S. Serdar Kozat.
+          renewable-energy forecasting. Supervised by [Prof. S. Serdar Kozat](https://kilyos.ee.bilkent.edu.tr/~kozat/).
 
       - company: BAYKAR Inc.
         position: Embedded Software Research Intern
