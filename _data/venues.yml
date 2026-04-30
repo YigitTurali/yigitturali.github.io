@@ -1,0 +1,31 @@
+"ICML":
+  url: https://icml.cc/
+  color: "#1f77b4"
+
+"NeurIPS-W":
+  url: https://neurips.cc/
+  color: "#9467bd"
+
+"NCAA":
+  url: https://www.springer.com/journal/521
+  color: "#2ca02c"
+
+"BSPC":
+  url: https://www.sciencedirect.com/journal/biomedical-signal-processing-and-control
+  color: "#d62728"
+
+"DSP":
+  url: https://www.sciencedirect.com/journal/digital-signal-processing
+  color: "#ff7f0e"
+
+"SIViP":
+  url: https://www.springer.com/journal/11760
+  color: "#17becf"
+
+"IEEE SPL":
+  url: https://signalprocessingsociety.org/publications-resources/ieee-signal-processing-letters
+  color: "#8c564b"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b22222"

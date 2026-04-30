@@ -1,0 +1,214 @@
+cv:
+  name: Mehmet Yigit Turali
+  label: M.S./Ph.D. Student, UCLA Electrical and Computer Engineering
+  email: myigitturali@ucla.edu
+  location: Los Angeles, CA
+  image: ""
+  summary: >
+    PhD student at UCLA ECE, advised by Prof. Vwani P. Roychowdhury. Research interests:
+    large language models, structured memory, continual learning, NLP for genomics, ML for
+    health, time-series forecasting, and computational neuroscience.
+
+  social_networks:
+    - network: GitHub
+      username: YigitTurali
+    - network: GoogleScholar
+      username: t4ZnR-0AAAAJ
+
+  address:
+    street: Engineering IV Building
+    city: Los Angeles
+    region: California
+    postalCode: 90095
+    countryCode: US
+
+  sections:
+    Education:
+      - institution: University of California, Los Angeles (UCLA)
+        location: Los Angeles, CA
+        url: https://www.ee.ucla.edu/
+        area: Electrical and Computer Engineering
+        studyType: M.S./Ph.D.
+        start_date: 2024-09
+        end_date: present
+        score: "GPA 3.94/4.00"
+        highlights:
+          - "Advisor: Prof. Vwani P. Roychowdhury."
+          - "Research: structured memory for LLMs, NLP for genomics, brain-organoid computing, LLMs for global health."
+
+      - institution: Bilkent University
+        location: Ankara, Turkey
+        url: https://ee.bilkent.edu.tr/
+        area: Electrical and Electronics Engineering
+        studyType: B.S.
+        start_date: 2019-09
+        end_date: 2024-06
+        score: "GPA 3.83/4.00, Summa Cum Laude"
+        highlights:
+          - "Advisor: Prof. S. Serdar Kozat."
+          - "Research: feature selection, gradient boosting, sequential regression, computer vision for medical imaging."
+
+    Experience:
+      - company: UCLA Electrical and Computer Engineering
+        position: Graduate Student Researcher
+        location: Los Angeles, CA
+        start_date: 2024-09
+        end_date: present
+        summary: >
+          Lead and co-lead research projects on (i) PANINI / Generative Semantic Workspaces — non-parametric
+          continual learning via structured memory (ICML 2026); (ii) NLP/LLM-based one-shot detection of
+          structural variants in genomic data; (iii) brain-organoid reservoir computing for chaotic time-series
+          forecasting; and (iv) GlobalHealthLLM — LLM-driven medical-record standardization for pediatric
+          epilepsy in rural Ugandan clinics.
+
+      - company: DataBoss Inc.
+        position: Machine Learning Researcher
+        location: Ankara, Turkey
+        start_date: 2024-01
+        end_date: 2024-06
+        summary: >
+          Built AI-powered chatbots and agent assistants on Langchain. Developed RAG variants and agent
+          architectures, including a self-multi-RAG built on top of self-RAG. Supervised by Prof. S. Serdar Kozat.
+
+      - company: DataBoss Inc.
+        position: Machine Learning Researcher
+        location: Ankara, Turkey
+        start_date: 2022-12
+        end_date: 2024-01
+        summary: >
+          Time-series analysis and forecasting with statistical and ML algorithms for renewable-energy and
+          finance sectors. Developed a gradient-boosting variant integrating error terms as features for
+          renewable-energy forecasting. Supervised by Prof. S. Serdar Kozat.
+
+      - company: BAYKAR Inc.
+        position: Embedded Software Research Intern
+        location: Istanbul, Turkey
+        start_date: 2022-06
+        end_date: 2022-08
+        summary: >
+          Worked on autonomous-locating UAVs for BAYKAR and the Turkish Armed Forces. Developed an
+          embedded-software pipeline to reduce the need for human control.
+
+      - company: National Magnetic Resonance Research Center (UMRAM)
+        position: Computer Vision Researcher
+        location: Ankara, Turkey
+        start_date: 2021-06
+        end_date: 2022-12
+        summary: >
+          Diagnosing diseases from X-ray images with deep learning. Worked with Prof. Tolga Çukur on
+          (i) sacroiliitis prediction from sacroiliac-joint radiography (JointNET) and (ii) HydraViT —
+          adaptive multi-branch transformer for multi-label chest X-ray classification.
+
+    Teaching:
+      - company: UCLA Electrical and Computer Engineering
+        position: Teaching Assistant — M146, Introduction to Machine Learning
+        location: Los Angeles, CA
+        start_date: 2026-04
+        end_date: 2026-06
+
+      - company: UCLA Electrical and Computer Engineering
+        position: Teaching Assistant — ECE C147, Neural Networks and Deep Learning
+        location: Los Angeles, CA
+        start_date: 2026-01
+        end_date: 2026-03
+
+      - company: UCLA Electrical and Computer Engineering
+        position: Teaching Assistant — ECE C143, Neural Signal Processing
+        location: Los Angeles, CA
+        start_date: 2025-09
+        end_date: 2025-12
+
+      - company: UCLA Electrical and Computer Engineering
+        position: Teaching Assistant — ECE 131A, Probability and Statistics
+        location: Los Angeles, CA
+        start_date: 2025-01
+        end_date: 2025-03
+
+      - company: Bilkent University
+        position: Undergraduate Teaching Assistant — CS 115 (Intro to Programming in Python), EEE 102 (Intro to Digital Circuit Design)
+        location: Ankara, Turkey
+        start_date: 2021-02
+        end_date: 2022-01
+
+    Awards:
+      - title: Bilkent University Research Excellence Award
+        date: 2024-06
+        awarder: Bilkent University
+        summary: For publications in distinguished journals throughout undergraduate study.
+
+      - title: Bilkent University Responsible Artificial Intelligence Innovation Award
+        date: 2024-06
+        awarder: MathWorks / FIGES / Tubitak Sage
+        summary: Selected by a jury of MathWorks, FIGES, and Tubitak Sage representatives in the 2024 Responsible AI Competition.
+
+      - title: 4th Place — Royal Dutch Shell Cashflow Forecasting Datathon
+        date: 2023-05
+        awarder: Royal Dutch Shell
+        summary: Placed 4th out of 1000+ participants.
+
+      - title: Bilkent University High Honour Certificates
+        date: 2024-06
+        awarder: Bilkent University
+        summary: Awarded for maintaining a CGPA of 3.50+ each semester (2020–2024).
+
+      - title: Bilkent University Comprehensive Undergraduate Scholarship
+        date: 2024-06
+        awarder: Bilkent University
+        summary: Full tuition waiver, monthly stipend, and accommodation support during B.S. (2019–2024).
+
+      - title: General Directorate of Higher Education Credit and Hostels Institution — Top 100 Scholarship
+        date: 2024-06
+        awarder: KYK (Türkiye)
+        summary: Monthly stipend and accommodation support during B.S. (2019–2024).
+
+      - title: 71st Place — National University Entrance Exam (Türkiye)
+        date: 2019-07
+        awarder: ÖSYM (Measuring, Selection and Placement Center of Türkiye)
+        summary: Placed 71st among 2.5M+ students.
+
+      - title: 1st Place — Atilim University 7th High School Physics Competition
+        date: 2019-05
+        awarder: Atilim University
+        summary: Placed 1st among 100 student groups.
+
+    Skills:
+      - name: Programming Languages
+        level: Advanced
+        icon: fa-solid fa-code
+        keywords: "Python, MATLAB, Verilog HDL"
+
+      - name: Machine Learning
+        level: Advanced
+        icon: fa-solid fa-brain
+        keywords: "Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Plotly"
+
+      - name: Deep Learning
+        level: Advanced
+        icon: fa-solid fa-network-wired
+        keywords: "PyTorch, TensorFlow, Keras, Transformers, Hugging Face, vLLM"
+
+      - name: Vector Databases & Retrieval
+        level: Advanced
+        icon: fa-solid fa-database
+        keywords: "Pinecone, FAISS, Langchain"
+
+      - name: Neuroscience Analysis
+        level: Intermediate
+        icon: fa-solid fa-microscope
+        keywords: "Elephant, Kilosort, SpikeInterface"
+
+      - name: Tooling
+        level: Advanced
+        icon: fa-solid fa-screwdriver-wrench
+        keywords: "Git, Docker, LaTeX"
+
+    Languages:
+      - name: Turkish
+        summary: "Native speaker"
+      - name: English
+        summary: "Fluent"
+
+    Interests:
+      - name: Research
+        icon: fa-solid fa-flask
+        keywords: "LLMs, structured memory, continual learning, NLP, ML for health, time-series forecasting, computational neuroscience, computational biology"

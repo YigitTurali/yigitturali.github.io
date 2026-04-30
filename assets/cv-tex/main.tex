@@ -1,0 +1,431 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{academicons}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\urlstyle{tt}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{etaremune}
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{\texttt{#1}}}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\newcommand{\updateinfo}[1][\today]{\par\vfill\hfill{\scriptsize Last updated on #1}}
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{1.2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{0pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{5pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \emph{\small#3} & \emph{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumePublicationsSubheading}[2]{
+  \vspace{1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectsSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \emph{#3} & \textbf{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeAwardsSubheading}[2]{
+  \vspace{1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \tabitem \small #1 & \textbf{\small #2}
+    \end{tabular*}\vspace{-6pt}
+}
+
+
+\newcommand{\resumeBachelorSubheading}[6]{
+  \vspace{5pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \emph{\small#3} & \emph{\small #4} \\
+      {\small#5} & \emph{\small #6}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeMasterSubheading}[7]{
+  \vspace{0pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \emph{\small#3} & \emph{\small #4} \\
+      {\small#5} \\
+      {\small#6} \\
+      {\small#7} 
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \emph{\small#1} & \emph{\small #2} \\
+    \end{tabular*}\vspace{1pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumePublicationItemListStart}{\begin{etaremune}}
+\newcommand{\resumePublicationItemListEnd}{\end{etaremune}\vspace{0pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Large \scshape Mehmet Yigit Turali} \\ \vspace{1pt}
+    Department of Electrical and Computer Engineering, UCLA, Los Angeles, California \\ \vspace{1pt}
+    \href{mailto:yigit.turali@ug.bilkent.edu.tr}{\faEnvelope\ myigitturali@ucla.edu} ~ 
+    \href{https://yigitturali.com/}{\raisebox{-0.05\height}\faGlobeAmericas\ yigitturali.com}  ~
+    \href{https://github.com/YigitTurali}{\raisebox{-0.1\height}\faGithub\ github.com/YigitTurali}
+    \vspace{-8pt}
+\end{center}
+
+%------RESEARCH INTERESTS-------
+\section{Research Interests}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{2}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item Machine Learning (ML)
+                \item Deep Learning (DL)
+                \item Statistical Learning
+                \item Natural Language Processing(NLP)
+                \item Large Language Models (LLMs)
+                \item Computer Vision
+                \item ML for Time Series Forecasting
+                \item Optimization
+                \item Computational Neuroscience
+                \item Computational Biology
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%------RELATED COURSEWORK-------
+\section{Related Coursework}
+    %\resumeSubHeadingListStart
+        \begin{itemize}
+        \item Neural Networks, Introduction to Machine Learning, Digital Signal Processing, Statistical Learning and Data Analytics, Probability and Statistics, Linear Algebra, Linear Programming, Large Scale Social and Complex Networks: Design and Algorithms, Advanced Neural Networks and Deep Learning, Game Theory, Deep Generative Networks, Reinforcement Learning and Dynamic Programming
+        \end{itemize}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHead\vspace{-8mm}ingListEnd
+    %\resumeSubHead\vspace{-8mm}ingListEnd
+\vspace{-8mm}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeBachelorSubheading
+      {University of California, Los Angeles (UCLA)}{Sep. 2024 -- \textit{present}}
+      {M.S./Ph.D. in Electrical and Computer Engineering}{Los Angeles, CA}
+      {\textbf{GPA:} 3.94/4.00, \textbf{Advisor:} \href{https://www.vwaniroychowdhury.com}{Dr. Vwani P. Roychowdhury}}{}
+      \vspace{5.5pt}
+    \resumeBachelorSubheading
+      {Bilkent University}{Sep. 2019 -- Jun 2024}
+      {Bachelor of Science in Electrical and Electronics Engineering}{Ankara, Turkey}{\textbf{GPA:} 3.83/4.00 \emph{Summa Cum Laude}}{}
+  \resumeSubHeadingListEnd
+
+
+\vspace{-8mm}
+%-----------AWARDS & HONORS-----------
+\section{Honors \& Awards}
+\resumeSubHeadingListStart
+    \resumeAwardsSubheading
+    {\textbf{Bilkent University Research Excellence Award:} Since he published papers in distinguished \\ 
+    \hglue14.7pt \small journals throughout his Bilkent life.}{Jun. 2024}
+    \resumeAwardsSubheading
+    {\textbf{Bilkent University Responsible Artificial Intelligence Innovation Award:} MathWorks \\ \hglue14.7pt \small and FIGES have sponsored the 2024 Responsible Artificial Intelligence Competition. The jury, \\ \hglue14.7pt \small which includes representatives from MathWorks, FIGES and Tubitak Sage, selected winner \\ \hglue14.7pt \small for the Responsible Artificial Intelligence Innovation Award. }{Jun. 2024}
+    \resumeAwardsSubheading
+    {\textbf{Royal Dutch Shell, Shell Cashflow Forecasting Datathon:} Placed $4^{st}$ in Shell Cashflow \\ \hglue14.7pt \small Forecasting Datathon among over 1 thousand people.}{May. 2023}
+    \resumeAwardsSubheading
+    {\textbf{Bilkent University, High Honour Certificates:} Achieved "High Honor Certificate" since \\ \hglue14.7pt \small having a GPA of 3.50 or above while carrying at least a minimum course load and having \\ \hglue14.7pt \small a CGPA of 2.00 or higher.}{2020 -- 2024}
+    \resumeAwardsSubheading
+    {\textbf{Bilkent University, Comprehensive Undergraduate Scholarship:} Full tuition waiver, \\ \hglue14.7pt \small a monthly stipend, and accommodation support during B.S.}{2019 -- 2024}
+     \resumeAwardsSubheading
+    {\textbf{General Directorate of Higher Education Credit and Hostels Institution} \\ \hglue14.7pt \textbf{\small Top 100 Scholarship:} \small A monthly stipend, and accommodation support during B.S.}{2019 -- 2024}
+     \resumeAwardsSubheading
+    {\textbf{Measuring, Selection and Placement Center of Turkey} \\ \hglue14.7pt \textbf{\small University Entrance Exam Results:} \small Placed $71^{st}$ in the National University \\ \hglue14.7pt \small Entrance Exam among over 2.5 million students}{Jul. 2019}
+    \resumeAwardsSubheading
+    {\textbf{Atilim University} \\ \hglue14.7pt \textbf{\small High School Physics Competition:} \small Placed $1^{st}$ in Atilim University $7^{th}$ High \\ \hglue14.7pt \small School Physics Competition among 100 student groups.}{May. 2019}
+
+  \resumeSubHeadingListEnd
+\newpage
+
+
+%-----------PUBLICATIONS-----------
+\section{\href{https://scholar.google.com/citations?user=t4ZnR-0AAAAJ&hl=tr}{Publications \faGraduationCap\ }}
+  \resumeSubHeadingListStart
+  \resumePublicationsSubheading
+      {Conference \& Workshop Papers}{}
+    \resumePublicationItemListStart
+      \resumeItem{S. Rajesh$^{*}$, P. S. Holur$^{*}$, \textbf{M. Y. Turali}, C. Duan, and V. Roychowdhury,
+      “Panini: Continual Learning in Token Space via Structured Memory,”
+      \emph{ICML 2026 (Accepted as Poster)}.\\
+      \footnotesize{$^{*}$Equal contribution.}}
+        \resumeItem{Z. Fei$^{*}$, \textbf{M. Y. Turali}$^{*}$, S. Rajesh, X. Dai, H. Pham, P. S. Holur, Y. Zhu, L. J. Mooney, Y.-I. Hser, and V. Roychowdhury, 
+        “Demo: Customizing Open-Source LLMs for Quantitative Medication Attribute Extraction across Heterogeneous EHR Systems,” 
+        \emph{NeurIPS 2025 Workshop on GenAI for Health: Potential, Trust, and Policy Compliance (Accepted as Poster)}.\\
+        \footnotesize{$^{*}$Equal contribution.}}
+      \resumePublicationItemListEnd
+    \resumePublicationsSubheading
+      {Journal Papers}{}
+      \resumePublicationItemListStart
+        \resumeItem{\textbf{M. Y. Turali}, M.E. Lorasdagi, S.S. Kozat, “Binary Feature Mask Optimization for Feature Selection," \emph{Neural Computing and Applications}, 2025, DOI:\doi{10.1007/s00521-024-10913-9}.}
+        \resumeItem{\textbf{M. Y. Turali}, Ali T. Koc, Suleyman S. Kozat, "Optimal stochastic gradient descent algorithm for filtering," \emph{Digital Signal Processing}, Volume 155, 2024, 104731, ISSN 1051-2004, https://doi.org/10.1016/j.dsp.2024.104731.}
+        \resumeItem{\textbf{M. Y. Turali}, M.E. Lorasdagi, S.S. Kozat, “AFS-BM: Enhancing Model Performance through Adaptive Feature Selection with Binary Masking,"\emph{SIViP (2024)}. https://doi.org/10.1007/s11760-024-03411-x.}
+        \resumeItem{E. Ilhan, \textbf{M. Y. Turali} and S. S. Kozat, “Gradient Boosting With Moving-Average Terms for Nonlinear Sequential Regression," in \emph{IEEE Signal Processing Letters}, vol. 30, pp. 1182-1186, 2023, DOI: \doi{10.1109/LSP.2023.3309577}.}  
+      \resumeItem{Ş. Öztürk, \textbf{M. Y. Turalı}, and T. Çukur, “HydraViT: Adaptive multi-branch transformer for multi-label disease classification from Chest X-ray images,” \emph{Biomedical Signal Processing and Control}, vol. 100, 106959, 2025, DOI: \doi{10.1016/j.bspc.2024.106959.}}
+      \resumeItem{S. Turk, A. Demirkaya, \textbf{M. Y. Turali}, “JointNET: A Deep Model for Predicting Active Sacroiliitis from Sacroiliac Joint Radiography,” \emph{arXiv}, 2023. DOI: \doi{10.48550/ARXIV.2301.10769}.}
+        \resumePublicationItemListEnd
+        
+      % \resumePublicationItemListEnd
+      %   \resumePublicationsSubheading
+      %   {In Progress} {}
+      %   \resumePublicationItemListStart
+      %       \resumeItem{\textbf{M. Y. Turali}, M.E. Lorasdagi, A. T. Koc, S.S. Kozat, “AFS-BM: Enhancing Model Performance through Adaptive Feature Selection with Binary Masking" .} \emph{in submission process}
+      %       \resumeItem{\textbf{M. Y. Turali}, M.E. Lorasdagi, A. T. Koc, S.S. Kozat, “Binary Feature Mask Optimization for Feature Selection".}\emph{in submission process}
+      %   \resumePublicationItemListEnd
+\vspace{-8mm}
+%-----------ACADEMIC DUTIES-----------
+\section{Academic Duties}
+\resumeSubHeadingListStart
+    \resumeSubheading{Graduate Student Researcher}{Sep. 2024 -- Present}{University of California, Los Angeles}{}
+    \resumeSubheading{Teaching Assistant}{Jan. 2025 -- Mar. 2025}{University of California, Los Angeles}{}
+    \resumeItemListStart
+    \resumeItem{ECE131A- Probability \& Statistics} \\
+    \resumeItemListEnd
+    \resumeSubheading{Undergraduate Research Assistant}{Jun. 2021 -- Jun. 2024}{Bilkent University}{}
+    
+    \resumeSubheading{Undergraduate Teaching Assistant}{Feb. 2021 -- Jan. 2022}{Bilkent University}{}
+    \resumeItemListStart
+    \resumeItem{CS 115 - Introduction to Programming in Python} \\
+    \resumeItem{EEE 102 - Introduction to Digital Circuit Design } \\
+    \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+\vspace{-8mm}
+%-----------INDUSTRIAL EXPERIENCE-----------
+\section{Research Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Generative Semantic Workspace (GSW)}{June. 2024 -- Present}{Graduate Student Researcher, \href{https://www.ee.ucla.edu/}{UCLA Electrical and Computer Engineering}}{}
+        \resumeItemListStart
+            \resumeItem{Co-developed \textbf{PANINI} (submitted to ICML), a non-parametric continual learning framework that encodes documents into \textbf{Generative Semantic Workspaces (GSW)}—entity- and event-aware networks of atomic question–answer (QA) pairs enabling reasoning-grounded inference over stored experiences.} \\
+            \resumeItem{Designed \textbf{Reasoning Inference Chain Retrieval (RICR)}, a beam-search retrieval procedure that performs one-shot query decomposition and follows multi-hop inference chains through GSWs to assemble compact evidence.} \\
+            \resumeItem{Implemented \textbf{dual indexing} for scalable memory access: a BM25 index over entity + role/state descriptors and a dense vector index over QA pairs, enabling targeted retrieval of QA evidence (instead of long text chunks).} \\
+            \resumeItem{Demonstrated strong accuracy--efficiency trade-offs: top average performance across six QA benchmarks while using \textbf{2--30$\times$ fewer} answer-context tokens than competitive baselines, and improved reliability by reducing unsupported answers on curated unanswerable queries.} \\
+            \resumeItem{Built an end-to-end \textbf{open-source-capable} structured-memory pipeline (GSW construction + retrieval + answering), supporting reproducible multi-hop QA without continual parameter updates.} \\
+        \resumeItemListEnd
+        \resumeSubheading{NLP and LLM Applications for Genomic Structural Variant Detection}{Sep. 2024 -- Present}{Graduate Student Researcher, \href{https://www.ee.ucla.edu/}{UCLA Electrical and Computer Engineering}}{}
+        \resumeItemListStart
+            \resumeItem{Working under the supervision of Prof. Vwani P. Roychowdhury on applying Natural Language Processing (NLP) and Large Language Model (LLM) techniques to genomic data analysis.} \\
+            \resumeItem{Developing novel one-shot structural variant detection methodologies using transformer-based architectures that treat DNA sequences as a specialized form of language.} \\
+            \resumeItem{Implementing Reference-Free DNA Embedding (RDE) models inspired by NLP techniques like contrastive learning to create semantically meaningful representations of genomic sequences for direct variant identification.} \\
+        \resumeItemListEnd
+        \resumeSubheading{Brain Organoid Computing Research Project}{Sep. 2024 -- Present}{Graduate Student Researcher, \href{https://www.ee.ucla.edu/}{UCLA Electrical and Computer Engineering}}{}
+        \resumeItemListStart
+            \resumeItem{Conducted pioneering research on brain organoid computing under the supervision of Prof. Vwani P. Roychowdhury, exploring the computational capabilities of biological neural networks} \\
+            \resumeItem{Developed and implemented protocols for interfacing brain organoids with microelectrode arrays to harness their inherent computational properties for complex data processing} \\
+            \resumeItem{Currently focused on applying organoid-based reservoir computing approaches to forecast chaotic time series, achieving promising preliminary results compared to traditional deep learning methods} \\
+            \resumeItem{Collaborated with an interdisciplinary team to optimize stimulation parameters and recording techniques for enhancing the predictive capabilities of organoid neural networks in nonlinear dynamical systems} \\
+        \resumeItemListEnd
+
+        \resumeSubheading{GlobalHealthLLM Medical Research Project}{Jan. 2025 -- Present}{Graduate Student Researcher, \href{https://www.ee.ucla.edu/}{UCLA Electrical and Computer Engineering}}{}
+        \resumeItemListStart
+            \resumeItem{Leading a multidisciplinary research initiative focused on leveraging large language models (LLMs) to refine and standardize medical records from underserved communities in Uganda}
+            \resumeItem{Developing and implementing machine learning models to predict optimal anti-seizure medication efficacy for pediatric epilepsy patients in Ugandan tribal communities}
+            \resumeItem{Creating an LLM-powered system that transforms unstructured clinical notes into standardized medical records while preserving culturally specific health information and treatment approaches}
+            \resumeItem{Collaborating with local healthcare providers to design and deploy an accessible interface for treatment decision support, aiming to improve medication adherence and seizure control in rural settings}
+        \resumeItemListEnd
+
+        \resumeSubheading{AI Chatbot Assistant Agents Research Project}{Jan. 2024 -- Jun. 2024}{Machine Learning Researcher, \href{https://www.data-boss.com.tr/tr/}{DataBoss Inc.}}{}
+            \resumeItemListStart
+            \resumeItem{Worked under the supervision of Prof. S. Serdar Kozat on the development of AI-powered chatbot and agent assistants for various applications using Langchain.} \\
+            \resumeItem{Created and developed AI-driven chatbots and agent assistants tailored for different purposes, utilizing Langchain to enhance their capabilities.} \\
+            \resumeItem{Developed various Retrieval-Augmented Generation (RAG) techniques and agent architectures, including self-multi RAG based on self-RAG, to improve information retrieval and response generation for AI assistants.} \\
+            \resumeItemListEnd
+            
+        \resumeSubheading{Time Series Forecasting by Using ML and DL Research Project}{Dec. 2022 -- Jan. 2024}{Machine Learning Researcher, \href{https://www.data-boss.com.tr/tr/}{DataBoss Inc.}}{}
+        \resumeItemListStart
+           \resumeItem{Worked under the supervision of Prof. S. Serdar Kozat on time series analysis and forecasting with Statistical Learning and Machine Learning Algorithms in the renewable energy and finance sector.} \\
+           \resumeItem{Developed a novel algorithm that integrates error terms into Gradient Boosting Machines as a feature for forecasting renewable energy generation and making decisions in the renewable energy sector.} \\
+        \resumeItemListEnd
+
+    \resumeProjectsSubheading{Unmanned Aerial Vehicle Research Project}{Jun. 2022 -- Aug. 2022}{Embedded Software Research Intern, \href{https://www.data-boss.com.tr/}{BAYKAR Inc.}}{}
+    \resumeItemListStart
+       \resumeItem{Took an active role in a project focused on autonomous locating UAVs, serving both \href{https://baykartech.com/en/}{BAYKAR} and the Turkish Armed Forces.}
+       \resumeItem{Developed an embedding software pipeline for UAVs to reduce the need for human control.} \\
+    \resumeItemListEnd
+
+    \resumeProjectsSubheading{Diagnosing Various Diseases from X-ray Images with DL Research Project}{Jun. 2021 -- Dec. 2022}{Computer Vision Researcher, \href{https://umram.bilkent.edu.tr/index.php/tr/}{National Magnetic Resonance Research Center}}{}
+    \resumeItemListStart
+       \resumeItem{Assisted Prof. Dr. Tolga Çukur and Ph.D. student Ahmet Demirkaya on a master’s degree project about diagnosing sacroiliitis (which is an inflammation of one or both sacroiliac joints) from X-ray images by using deep neural network systems. These networks can diagnose the disease from X-ray images that medical doctors would not be able to diagnose without an MRI image.}
+       \resumeItem{Assisted Prof. Dr. Tolga Çukur and Asst. Prof. Dr. Şaban Öztürk on a Tübitak project about diagnosing 14 different chest diseases from X-ray images by using deep neural network systems. These networks can diagnose disease from X-ray images without medical doctors’ supervision.} \\
+    \resumeItemListEnd   
+\resumeSubHeadingListEnd
+\vspace{-8mm}
+%-----------PROJECTS-----------
+\section{Other Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectsSubheading{Wind Energy Forecasting}{}{}{}
+        Leveraged SCADA data to forecast wind energy. Applied multiple regression techniques including LASSO, decision trees, and neural networks. Enhanced model accuracy with feature engineering, integrating lag features and a rolling window mean strategy for time series data.
+
+        \resumeProjectsSubheading{Text-to-Image Synthesis}{}{}{}
+        Conducted text-to-image synthesis using GAN architectures: DCGAN, DALL-E, and DFGAN. While DALL-E generated higher-resolution images, DFGAN faced GPU constraints. DALL-E stood out due to its performance with fewer epochs.
+
+        \resumeProjectsSubheading{Game “Shoot and Run!” on BASYS3}{}{}{}
+        Developed a game "Shoot and Run!" for the BASYS3 FPGA board using VHDL. Displayed on a VGA monitor, the game features spaceship combat, player movement via pushbuttons, level selection through switches, and player stats on LEDs.
+
+        \resumeProjectsSubheading{TRC-10 Transceiver}{}{}{}
+        Engineered a TRC-10 transceiver operating at a wavelength of 10 meters.
+    \resumeSubHeadingListEnd
+
+
+
+     
+\resumeSubHeadingListEnd
+\vspace{-8mm}
+\section{Technical Skills}
+    \begin{itemize}
+    \item \textbf{Programming Languages:} \\
+     \begin{itemize}
+        \item Python, MATLAB, Verilog HDL
+    \end{itemize}
+    
+    \item \textbf{Machine Learning Libraries:} \\
+    \begin{itemize}
+        \item Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, Plotly \& Folium, ElasticNet
+    \end{itemize}
+     \item \textbf{Deep Learning Frameworks:} \\
+    \begin{itemize}
+        \item TensorFlow, PyTorch, Keras, Transformers, Hugging Face, VLLM
+    \end{itemize}
+    \item \textbf{Vector Databases \& Retrieval:} \\
+    \begin{itemize}
+        \item Pinecone, FAISS, Langchain
+    \end{itemize}
+    \item \textbf{Neuroscience Analysis Tools:} \\
+    \begin{itemize}
+        \item Elephant, Kilosort, SpikeInterface
+    \end{itemize}
+    \item \textbf{Version Control:} \\
+    \begin{itemize}
+        \item Git \& GitHub
+    \end{itemize}
+    \item \textbf{Tools:} \\
+    \begin{itemize}
+        \item Docker \& \LaTeX
+    \end{itemize}
+    \end{itemize}
+    
+
+
+
+
+%
+
+%  \vspace{-16pt}
+
+\updateinfo
+
+\end{document}
