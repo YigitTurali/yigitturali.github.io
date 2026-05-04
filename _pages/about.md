@@ -31,7 +31,7 @@ I'm a M.S./Ph.D. student at the [Department of Electrical and Computer Engineeri
 
 Currently, I'm building **non-parametric continual-learning systems** that encode documents into entity- and event-aware structured memories — *Generative Semantic Workspaces (GSW)* — and reason over them via inference-chain retrieval. This work led to **PANINI** (ICML 2026), which delivers competitive multi-hop QA accuracy with 2–30× fewer answer-context tokens than baselines.
 
-In Summer 2026, I will serve as **Academic Mentor for the OpenAI team** at the [IPAM RIPS](https://www.ipam.ucla.edu/programs/student-research-programs/research-in-industrial-projects-for-students-rips/) program at UCLA.
+In Summer 2026, I will serve as the **Academic Mentor for the OpenAI team** at the [IPAM RIPS](https://www.ipam.ucla.edu/programs/student-research-programs/research-in-industrial-projects-for-students-rips/) program at UCLA — partnering with OpenAI to advise a team of top undergraduates on an OpenAI-sponsored summer research project.
 
 I also work on:
 - **NLP for genomics**: reference-free DNA embeddings and one-shot structural-variant detection treating DNA as a specialized language.

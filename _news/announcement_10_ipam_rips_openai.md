@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🤝 Excited to announce I'll serve as **Academic Mentor for the OpenAI team** at the [IPAM RIPS](https://www.ipam.ucla.edu/programs/student-research-programs/research-in-industrial-projects-for-students-rips/) (Research in Industrial Projects for Students) program at UCLA, June 22 – August 21, 2026!
+🤝 Thrilled to share that I'll be the **Academic Mentor for the OpenAI team** this summer at the [IPAM RIPS](https://www.ipam.ucla.edu/programs/student-research-programs/research-in-industrial-projects-for-students-rips/) program at UCLA (June 22 – August 21, 2026) — partnering with **OpenAI** to mentor a team of top undergraduates on an OpenAI-sponsored research project.
