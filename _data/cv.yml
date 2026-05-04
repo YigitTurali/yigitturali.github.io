@@ -65,13 +65,15 @@ cv:
           forecasting; and (iv) GlobalHealthLLM — LLM-driven medical-record standardization for pediatric
           epilepsy in rural Ugandan clinics.
 
-      - company: OpenAI × IPAM RIPS, UCLA
+      - company: '<i class="fa-brands fa-openai"></i> <a href="https://openai.com/">OpenAI</a> × IPAM RIPS, UCLA'
         position: Academic Mentor — OpenAI Project Team
+        url: https://openai.com/
         location: Los Angeles, CA
         start_date: 2026-06
         end_date: 2026-08
         summary: >
-          Selected as the **Academic Mentor for the OpenAI team** at the [IPAM Research in Industrial Projects for Students (RIPS)](https://www.ipam.ucla.edu/programs/student-research-programs/research-in-industrial-projects-for-students-rips/)
+          Selected as the **Academic Mentor for the [<i class="fa-brands fa-openai"></i> OpenAI](https://openai.com/) team**
+          at the [IPAM Research in Industrial Projects for Students (RIPS)](https://www.ipam.ucla.edu/programs/student-research-programs/research-in-industrial-projects-for-students-rips/)
           program, partnering with OpenAI's scientific mentor to advise a team of top undergraduates on an
           OpenAI-sponsored applied research problem over the summer.
 
