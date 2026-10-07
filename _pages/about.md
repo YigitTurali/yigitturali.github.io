@@ -29,14 +29,15 @@ latest_posts:
 
 I'm a M.S./Ph.D. student at the [Department of Electrical and Computer Engineering](https://www.ee.ucla.edu/), University of California, Los Angeles, advised by [Prof. Vwani P. Roychowdhury](https://www.vwaniroychowdhury.com). My research sits at the intersection of **large language models, structured memory, and machine learning for healthcare**.
 
-Currently, I'm building **non-parametric continual-learning systems** that encode documents into entity- and event-aware structured memories — *Generative Semantic Workspaces (GSW)* — and reason over them via inference-chain retrieval. This work led to **PANINI** (ICML 2026), which delivers competitive multi-hop QA accuracy with 2–30× fewer answer-context tokens than baselines.
+Currently, I'm building **non-parametric continual-learning systems** that encode documents into entity- and event-aware structured memories — _Generative Semantic Workspaces (GSW)_ — and reason over them via inference-chain retrieval. This work led to **PANINI** (ICML 2026), which delivers competitive multi-hop QA accuracy with 2–30× fewer answer-context tokens than baselines.
 
 In Summer 2026, I will serve as the **Academic Mentor for the <i class="fa-brands fa-openai"></i> [OpenAI](https://openai.com/) team** at the [IPAM RIPS](https://www.ipam.ucla.edu/programs/student-research-programs/research-in-industrial-projects-for-students-rips/) program at UCLA — partnering with [OpenAI](https://openai.com/) to advise a team of top undergraduates on an OpenAI-sponsored summer research project.
 
 I also work on:
+
 - **NLP for genomics**: reference-free DNA embeddings and one-shot structural-variant detection treating DNA as a specialized language.
-- **Brain-organoid computing**: reservoir-computing approaches that harness biological neural networks for chaotic time-series forecasting.
-- **GlobalHealthLLM**: LLM-driven standardization of pediatric epilepsy records from rural Ugandan clinics, supporting medication-decision tools.
+- **Brain-organoid computing**: reservoir-computing approaches that harness biological neural networks for chaotic time-series forecasting, and time-resolved network analysis that distinguishes pathological states in organoid models (ICASSP 2026).
+- **GlobalHealthLLM**: LLM-driven standardization of pediatric epilepsy records from rural Ugandan clinics, supporting medication-decision tools — including **MANANA** (NeurIPS 2026), which learns local anti-seizure-medication prescribing guidance and defers uncertain cases to specialists.
 
 Before UCLA, I earned my B.S. in Electrical and Electronics Engineering at [Bilkent University](https://ee.bilkent.edu.tr/) (Summa Cum Laude, 2024), where I was a researcher under [Prof. S. Serdar Kozat](https://kilyos.ee.bilkent.edu.tr/~kozat/) publishing on adaptive feature selection, gradient-boosted sequential regression, and SGD-based filtering. I'm a recipient of the Bilkent Research Excellence Award (2024) and the Responsible AI Innovation Award (MathWorks / FIGES / Tubitak Sage, 2024).
 

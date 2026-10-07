@@ -2,6 +2,14 @@
   url: https://icml.cc/
   color: "#1f77b4"
 
+"ICASSP":
+  url: https://2026.ieeeicassp.org/
+  color: "#00629b"
+
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#6a3d9a"
+
 "NeurIPS-W":
   url: https://neurips.cc/
   color: "#9467bd"

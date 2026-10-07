@@ -62,8 +62,8 @@ cv:
           Lead and co-lead research projects on (i) PANINI / Generative Semantic Workspaces — non-parametric
           continual learning via structured memory (ICML 2026); (ii) NLP/LLM-based one-shot detection of
           structural variants in genomic data; (iii) brain-organoid reservoir computing for chaotic time-series
-          forecasting; and (iv) GlobalHealthLLM — LLM-driven medical-record standardization for pediatric
-          epilepsy in rural Ugandan clinics.
+          forecasting and network analysis of organoid dynamics (ICASSP 2026); and (iv) GlobalHealthLLM — LLM-driven medical-record standardization and medication
+          decision support for pediatric epilepsy in rural Ugandan clinics (MANANA, NeurIPS 2026).
 
       - company: '<i class="fa-brands fa-openai"></i> <a href="https://openai.com/">OpenAI</a> × IPAM RIPS, UCLA'
         position: Academic Mentor — OpenAI Project Team
