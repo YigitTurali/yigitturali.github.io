@@ -95,6 +95,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-teaching-llms-to-recommend-and-defer-in-underrepresented-epilepsy-care-manana-has-been-accepted-to-neurips-2026-manana-learns-local-anti-seizure-medication-prescribing-guidance-for-pediatric-epilepsy-care-in-uganda-and-defers-uncertain-cases-to-specialists-joint-work-led-by-s-rajesh-and-k-sharma-with-prof-v-roychowdhury-r-mazumder-and-collaborators-arxiv-code",
           title: '🎉 Our paper Teaching LLMs to Recommend and Defer in Underrepresented Epilepsy Care...',
           description: "",
+          section: "News",},{id: "news-ta-ing-ece-c147-c247a-neural-networks-and-deep-learning-at-ucla-again-this-fall-2026-quarter",
+          title: '📚 TA’ing ECE C147/C247A: Neural Networks and Deep Learning at UCLA again this...',
+          description: "",
           section: "News",},{id: "projects-panini-generative-semantic-workspace",
           title: 'PANINI / Generative Semantic Workspace',
           description: "Continual learning in token space via structured memory (ICML 2026)",
@@ -140,6 +143,11 @@ ninja.data = [{
           description: "Signal-processing methods for neural data — spike sorting, decoding, and analysis of multielectrode recordings.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/ece-c143-fall-2025/";
+            },},{id: "teachings-ece-c147-c247a-neural-networks-and-deep-learning",
+          title: 'ECE C147/C247A — Neural Networks and Deep Learning',
+          description: "Theory and practice of modern neural networks, including CNNs, RNNs/Transformers, optimization, and regularization.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/ece-c147-c247a-fall-2026/";
             },},{id: "teachings-ece-c147-neural-networks-and-deep-learning",
           title: 'ECE C147 — Neural Networks and Deep Learning',
           description: "Theory and practice of modern neural networks, including CNNs, RNNs/Transformers, optimization, and regularization.",
