@@ -324,6 +324,7 @@
 %-----------ACADEMIC DUTIES-----------
 \section{Academic Duties}
 \resumeSubHeadingListStart
+    \resumeSubheading{Reviewer -- NeurIPS 2026 Workshop on GenAI for Health (GenAI4Health)}{Sep. 2026}{\href{https://aihealth.ischool.utexas.edu/GenAI4HealthNeurips2026/}{The Third Workshop on GenAI for Health: Agentic Systems, Clinical Trust, and Future Potential}}{}
     \resumeSubheading{Academic Mentor -- IPAM RIPS (\href{https://openai.com/}{OpenAI} Project Team)}{Jun. 2026 -- Aug. 2026}{Institute for Pure and Applied Mathematics (IPAM), UCLA}{}
     \resumeItemListStart
     \resumeItem{Served as the Academic Mentor for the \textbf{\href{https://openai.com/}{OpenAI} team} at the \href{https://www.ipam.ucla.edu/programs/student-research-programs/research-in-industrial-projects-for-students-rips/}{IPAM Research in Industrial Projects for Students (RIPS)} program, partnering with OpenAI's scientific mentor to advise top undergraduates on an OpenAI-sponsored summer research project.} \\
@@ -347,24 +348,16 @@
 
 \resumeSubHeadingListEnd
 \vspace{-8mm}
-%-----------PROFESSIONAL SERVICE-----------
-\section{Professional Service}
-\resumeSubHeadingListStart
-    \resumeSubheading{Reviewer -- NeurIPS 2026 Workshop on GenAI for Health (GenAI4Health)}{2026}{\href{https://aihealth.ischool.utexas.edu/GenAI4HealthNeurips2026/}{The Third Workshop on GenAI for Health: Agentic Systems, Clinical Trust, and Future Potential}}{}
-\resumeSubHeadingListEnd
-\vspace{-8mm}
 %-----------INDUSTRIAL EXPERIENCE-----------
 \section{Research Experience}
     \resumeSubHeadingListStart
-        \resumeSubheading{Generative Semantic Workspace (GSW)}{June. 2024 -- Present}{Graduate Student Researcher, \href{https://www.ee.ucla.edu/}{UCLA Electrical and Computer Engineering}}{}
+        \resumeSubheading{Generative Semantic Workspace (GSW) \& Deep-Research Agents}{June. 2024 -- Present}{Graduate Student Researcher, \href{https://www.ee.ucla.edu/}{UCLA Electrical and Computer Engineering}}{}
         \resumeItemListStart
-            \resumeItem{Co-developed \textbf{PANINI} (\textbf{accepted to ICML 2026, Poster}), a non-parametric continual learning framework that encodes documents into \textbf{Generative Semantic Workspaces (GSW)}—entity- and event-aware networks of atomic question–answer (QA) pairs enabling reasoning-grounded inference over stored experiences.} \\
-            \resumeItem{Designed \textbf{Reasoning Inference Chain Retrieval (RICR)}, a beam-search retrieval procedure that performs one-shot query decomposition and follows multi-hop inference chains through GSWs to assemble compact evidence.} \\
-            \resumeItem{Implemented \textbf{dual indexing} for scalable memory access: a BM25 index over entity + role/state descriptors and a dense vector index over QA pairs, enabling targeted retrieval of QA evidence (instead of long text chunks).} \\
-            \resumeItem{Demonstrated strong accuracy--efficiency trade-offs: top average performance across six QA benchmarks while using \textbf{2--30$\times$ fewer} answer-context tokens than competitive baselines, and improved reliability by reducing unsupported answers on curated unanswerable queries.} \\
-            \resumeItem{Built an end-to-end \textbf{open-source-capable} structured-memory pipeline (GSW construction + retrieval + answering), supporting reproducible multi-hop QA without continual parameter updates.} \\
-            \resumeItem{Leading \textbf{PANINI-DR} (first author; \textbf{under review at ICLR 2027}), a multi-agent deep-research harness that separates coordination of the overall investigation from research and verification of individual subquestions, with a shared GSW workspace recording subquestions, dependencies, findings, and supporting evidence.} \\
-            \resumeItem{Achieved the strongest average performance on BrowseComp-Plus, FRAMES, and MoNaCo against seven baselines (shared LLM backbone, frozen corpora): \textbf{73.3\%} accuracy on BrowseComp-Plus (\textbf{+16.0 pp} over the next-best baseline) and 26 of 50 hard questions solved, nearly twice the next-best; highest answer recoverability from saved evidence on all three benchmarks.} \\
+            \resumeItem{Leading \textbf{PANINI-DR} (first author; \textbf{under review at ICLR 2027}), a multi-agent deep-research harness that separates coordination of the overall investigation from research and verification of individual subquestions, with a shared \textbf{GSW workspace} recording subquestions, dependencies, findings, and supporting evidence.} \\
+            \resumeItem{Designed a dedicated \textbf{verification agent} that checks proposed answers against their subquestions and evidence; its feedback steers further investigation, and ablations show that structured planning, persistent state, and evidence-checked verification each improve performance.} \\
+            \resumeItem{Achieved the strongest average performance on BrowseComp-Plus, FRAMES, and MoNaCo against seven baselines (shared LLM backbone, frozen corpora): \textbf{73.3\%} accuracy on BrowseComp-Plus (\textbf{+16.0 pp} over the next-best baseline), 26 of 50 hard questions solved (nearly twice the next-best), and the highest answer recoverability from saved evidence on all three benchmarks.} \\
+            \resumeItem{Co-developed \textbf{PANINI} (\textbf{accepted to ICML 2026, Poster}), a non-parametric continual-learning framework that encodes documents into GSWs---entity- and event-aware networks of atomic question--answer pairs---and retrieves evidence with \textbf{Reasoning Inference Chain Retrieval (RICR)}, a beam search over multi-hop inference chains backed by dual BM25 + dense indexing.} \\
+            \resumeItem{PANINI achieved top average performance across six QA benchmarks with \textbf{2--30$\times$ fewer} answer-context tokens than competitive baselines and fewer unsupported answers on curated unanswerable queries, without continual parameter updates.} \\
         \resumeItemListEnd
         \resumeSubheading{NLP and LLM Applications for Genomic Structural Variant Detection}{Sep. 2024 -- Present}{Graduate Student Researcher, \href{https://www.ee.ucla.edu/}{UCLA Electrical and Computer Engineering}}{}
         \resumeItemListStart
