@@ -152,6 +152,9 @@ cv:
         start_date: 2021-02
         end_date: 2022-01
 
+    Professional Service:
+      - bullet: "**Reviewer**, NeurIPS 2026 Workshop on GenAI for Health — [The Third Workshop on GenAI for Health: Agentic Systems, Clinical Trust, and Future Potential](https://aihealth.ischool.utexas.edu/GenAI4HealthNeurips2026/)"
+
     Awards:
       - title: Bilkent University Research Excellence Award
         date: 2024-06
