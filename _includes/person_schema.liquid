@@ -1,0 +1,113 @@
+{% comment %}
+  Structured data (schema.org JSON-LD) describing the site owner, rendered on the homepage only.
+  Helps search engines and LLM-based search link this site to the person, papers, and code.
+  Keep in sync with _pages/about.md and _bibliography/papers.bib.
+{% endcomment %}
+{% assign home = site.url | append: site.baseurl | append: '/' %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": "{{ home }}#profile",
+        "url": "{{ home }}",
+        "name": "Mehmet Yigit Turali",
+        "mainEntity": { "@id": "{{ home }}#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "{{ home }}#person",
+        "name": "Mehmet Yigit Turali",
+        "alternateName": ["Mehmet Yiğit Turalı", "M. Yigit Turali", "M. Y. Turali", "Yigit Turali"],
+        "url": "{{ home }}",
+        "image": "{{ site.url }}{{ site.baseurl }}/assets/img/prof_pic.png",
+        "email": "mailto:myigitturali@ucla.edu",
+        "jobTitle": "Ph.D. Student, Electrical and Computer Engineering",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of California, Los Angeles",
+          "department": { "@type": "Organization", "name": "Department of Electrical and Computer Engineering", "url": "https://www.ee.ucla.edu/" },
+          "url": "https://www.ucla.edu/"
+        },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Bilkent University", "url": "https://www.bilkent.edu.tr/" },
+        "knowsAbout": [
+          "Large language models",
+          "LLM agents",
+          "Deep research agents",
+          "Multi-agent systems",
+          "Generative Semantic Workspaces",
+          "Structured memory for LLMs",
+          "Continual learning",
+          "Retrieval-augmented generation",
+          "Machine learning for healthcare",
+          "Computational neuroscience"
+        ],
+        "sameAs": [
+          "https://github.com/YigitTurali",
+          "https://scholar.google.com/citations?user=a_f1NkQAAAAJ",
+          "https://www.linkedin.com/in/myigitturali",
+          "https://x.com/yigitturali"
+        ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "PANINI-DR: Controlled Deep Research through Generative Semantic Workspaces",
+        "url": "https://arxiv.org/abs/2610.15208",
+        "datePublished": "2026-10-10",
+        "author": [
+          { "@id": "{{ home }}#person" },
+          { "@type": "Person", "name": "Shreyas Rajesh" },
+          { "@type": "Person", "name": "M. Efe Lorasdagi" },
+          { "@type": "Person", "name": "Chenda Duan" },
+          { "@type": "Person", "name": "Kartik Sharma" },
+          { "@type": "Person", "name": "Vwani Roychowdhury" }
+        ],
+        "sameAs": ["https://roychowdhuryresearch.github.io/PANINI-DR_Project_Page/"]
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "PANINI-DR",
+        "description": "Multi-agent deep-research harness with a shared Generative Semantic Workspace and a verification agent.",
+        "codeRepository": "https://github.com/roychowdhuryresearch/panini-dr",
+        "url": "https://roychowdhuryresearch.github.io/PANINI-DR_Project_Page/",
+        "programmingLanguage": "Python",
+        "author": { "@id": "{{ home }}#person" }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Panini: Continual Learning in Token Space via Structured Memory",
+        "url": "https://arxiv.org/abs/2602.15156",
+        "datePublished": "2026-02-16",
+        "publication": { "@type": "PublicationEvent", "name": "International Conference on Machine Learning (ICML) 2026" },
+        "author": [
+          { "@type": "Person", "name": "Shreyas Rajesh" },
+          { "@type": "Person", "name": "Pavan Holur" },
+          { "@id": "{{ home }}#person" },
+          { "@type": "Person", "name": "Chenda Duan" },
+          { "@type": "Person", "name": "Vwani Roychowdhury" }
+        ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Teaching LLMs to Recommend and Defer in Underrepresented Epilepsy Care",
+        "url": "https://arxiv.org/abs/2606.31036",
+        "datePublished": "2026-06-30",
+        "publication": { "@type": "PublicationEvent", "name": "Conference on Neural Information Processing Systems (NeurIPS) 2026" },
+        "author": [
+          { "@type": "Person", "name": "Shreyas Rajesh" },
+          { "@type": "Person", "name": "Kartik Sharma" },
+          { "@type": "Person", "name": "Tonmoy Monsoor" },
+          { "@id": "{{ home }}#person" },
+          { "@type": "Person", "name": "Richard Idro" },
+          { "@type": "Person", "name": "Juliana Kayaga" },
+          { "@type": "Person", "name": "Robert Sebunya" },
+          { "@type": "Person", "name": "Tracy Tushabe Namata" },
+          { "@type": "Person", "name": "Jessica Nichole Pasqua" },
+          { "@type": "Person", "name": "Vwani Roychowdhury" },
+          { "@type": "Person", "name": "Rajarshi Mazumder" }
+        ]
+      }
+    ]
+  }
+</script>

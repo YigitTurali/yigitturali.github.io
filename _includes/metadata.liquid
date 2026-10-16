@@ -245,3 +245,7 @@
     }
   </script>
 {% endif %}
+
+{% if page.permalink == '/' %}
+  {% include person_schema.liquid %}
+{% endif %}
